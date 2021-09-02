@@ -1,2 +1,2 @@
-# module-2-assignment
+# Coursera assignment
 My coursera assignment for module 2
