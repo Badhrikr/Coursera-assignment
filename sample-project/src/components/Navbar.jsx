@@ -4,7 +4,9 @@ function Navbar() {
   return (
     <header className="flex items-center justify-between px-6 py-5 bg-white">
       <nav className="flex items-center justify-between gap-8">
-        <img className="w-auto h-5" src="../dribbble-logo.svg" alt="" />
+        <a href="./">
+          <img className="w-auto h-5" src="../dribbble-logo.svg" alt="" />
+        </a>
         <NavItems />
       </nav>
 

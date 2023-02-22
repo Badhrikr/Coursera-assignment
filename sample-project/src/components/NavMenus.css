@@ -1,3 +1,40 @@
-:where(li:not(.menu-title):not(:empty)) > :where(:not(ul):hover) {
+/* :where(li:not(.menu-title):not(:empty)) > :where(:not(ul):hover) {
   background-color: none;
+} */
+
+.menu > li {
+  border-radius: 1rem;
+}
+
+.dropdown .dropdown-content {
+  width: 25rem;
+}
+
+.dropdown-items {
+  width: 100%;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 1em;
+}
+
+.menu :is(li:not(.menu-title):not(:empty)) > :where(:not(ul):focus),
+.menu :is(li:not(.menu-title):not(:empty)) > :where(:not(ul):hover) {
+  background-color: transparent;
+}
+
+.dropdown-items:focus,
+.dropdown-items:hover {
+  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+}
+
+.fa-arrow-right {
+  transform: translateX(-100%);
+  transition: translate 4s ease-in-out;
+}
+
+.menu
+  :is(li:not(.menu-title):not(:empty))
+  > :where(:not(ul):hover)
+  .fa-arrow-right {
+  transform: translateX(0);
 }
